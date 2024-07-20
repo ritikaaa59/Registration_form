@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Register!</h2>
+        <p id="result">head</p>
+        <form name="Formfill" onsubmit="return validation()"> 
+
+            <div class="input">
+                <input type="text" placeholder="Username" name="Username">
+            </div>
+            <div class="input">
+                <input type="email" placeholder="Email" name="Email">
+            </div>
+            <div class="input">
+                <input type="password" placeholder="Password" name="Password">
+            </div>
+            <div class="input">
+                <input type="password" placeholder="Confirm Password" name="Cpassword">
+            </div>
+            <div class="button">
+                <input type="submit" value="Register" onclick="validation()">
+            </div>
+            <div class="group">
+                <span><a href="#">Forgot Password</a></span>
+                <span><a href="./login.html">Login</a></span>
+            </div>
+        </form>
+        <div class="popup" id="popup">
+            <ion-icon name="checkmark-circle-outline"></ion-icon>
+         <h2>Thank You!</h2>
+         <p>You are registered successfully.</p>
+         <a href="./login.html"><button onclick="popupRemove()">Ok</button></a>
+
+        </div>
+       
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
