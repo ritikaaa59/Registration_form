@@ -24,7 +24,7 @@ This project is a simple registration form developed using DHTML (HTML, CSS, Jav
 - **CSS**: Used for styling the form to make it visually appealing.
 - **JavaScript**: Used for client-side validation of the form inputs.
 
-## Installation and Usage
+## Installation
 
 1. Clone the repository to your local machine:
 
