@@ -4,15 +4,16 @@
     box-sizing: border-box;
 }
 body{
-    background-color: aqua;
-    height: 100vh;
+    background:url(bg1.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .container{
-    background-color: pink;
     height: 60vh;
     width: 400px;
     max-width: 80%;
@@ -21,10 +22,12 @@ body{
     align-items: center;
     flex-direction: column;
     padding: 20px;
+    border: 2px solid black;
+    backdrop-filter: blur(15px);
 }
 .container h2{
     font-size: 30px;
-    color: #fff;
+    color: #000000;
     margin-bottom: 20px;
 }
 form{
@@ -33,6 +36,7 @@ form{
 .input{
     margin: 20px;
     border-bottom: 1px solid white;
+
 }
 .input input{
     width: 100%;
@@ -42,11 +46,12 @@ form{
     border: none;
     border-bottom: 2px solid white;
     font-size: 16px;
-    color: #fff;
+   
 }
 .button{
 text-align: center;
 width: 100%;
+
 }
 .button input{
     padding: 10px 20px;
@@ -54,7 +59,14 @@ width: 100%;
     font-size: 18px;
     border: none;
     outline: none;
-   width: 90%;
+    width: 90%;
+    background-color: rgb(133, 193, 182);
+    
+}
+.button input:hover{
+    background-color: #fff;
+    color: rgb(133, 193, 182);
+    border: 2px solid black;
 }
 .group{
     display: flex;
@@ -79,7 +91,7 @@ width: 100%;
 }
 .popup{
     background-color: #fff;
-    width: 25%;
+    width: 80%;
     height: auto;
     padding: 20px;
     text-align: center;
